@@ -631,3 +631,54 @@ hash.each_key { |key| puts key }
 # each value methods 
 
 hash.each_value { |value| puts value}
+
+
+str = "aabbcddeffg"
+
+# Count each character
+counts = Hash.new(0)
+
+str.each_char do |ch|
+  counts[ch] += 1
+end
+
+# Print characters that appear only once  
+counts.each do |char, count|
+  puts char if count == 1
+end
+
+
+str = "Praphull"
+
+for ch in str.chars
+    print ch
+end
+
+
+str = "PraphullGautam"
+
+
+str.each_char do |ch|
+    puts ch
+end
+
+
+str = "hello"
+
+res = str.reverse
+print res
+
+def rev_str(str)
+    str.reverse
+end
+
+puts rev_str("hello123")
+
+
+
+str = "hello sam "
+
+str.reverse.each_char do |ch|
+    print ch
+end
+
